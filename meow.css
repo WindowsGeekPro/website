@@ -35,9 +35,10 @@
 	background: #f6f7f8;
 	background: linear-gradient(to right,  #eeeeee 8%,#dddddd 18%,#eeeeee 33%);
 	background-repeat: no-repeat;
-	background-size: 800px 104px;
-	height: 96px;
+	background-size: 192px 192px;
+	height: 50px;
 	position: relative;
+	font-size: 20px;
 }
 
 <!-- Masking -->
@@ -49,16 +50,25 @@
  
 /* Every thing below this is just positioning */
  
-.background-masker.header-top,
-.background-masker.header-bottom,
-.background-masker.subheader-bottom {
+.background-masker.header-top
+{
+	top: 0;
+	left: 40px;
+	right: 0;
+	height: 10px;
+	font-size: 30px;
+}
+
+.background-masker.header-left
+{
 	top: 0;
 	left: 40px;
 	right: 0;
 	height: 10px;
 }
- 
-.background-masker.header-left,
+
+.background-masker.header-bottom,
+.background-masker.subheader-bottom,
 .background-masker.subheader-left,
 .background-masker.header-right,
 .background-masker.subheader-right {
@@ -106,6 +116,8 @@
 	left: 0;
 	right: 0;
 	height: 6px;
+	text-align: center;
+	font-size: 20px;
 }
  
 .background-masker.content-top {
